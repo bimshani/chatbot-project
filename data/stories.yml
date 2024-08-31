@@ -28,3 +28,48 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: greet and ask holiday plans
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_holiday_plans
+  - action: utter_holiday_plans
+
+- story: discuss weather and respond
+  steps:
+  - intent: discuss_weather
+  - action: utter_discuss_weather
+
+- story: discuss hobbies and respond
+  steps:
+  - intent: discuss_hobbies
+  - action: utter_discuss_hobbies
+
+
+- story: discuss travel plans
+  steps:
+  - intent: discuss_travel
+  - action: utter_discuss_travel
+  - intent: ask_more_details
+  - action: utter_ask_more_details
+
+
+- story: discuss life changes
+  steps:
+  - intent: discuss_life_change
+  - action: utter_discuss_life_change
+
+- story: discuss feelings and ask advice
+  steps:
+  - intent: discuss_feelings
+  - action: utter_discuss_feelings
+  - intent: ask_for_advice
+  - action: utter_ask_for_advice
+
+- story: discuss hobbies
+  steps:
+  - intent: discuss_hobbies
+  - action: utter_discuss_hobbies
+  - intent: ask_more_details
+  - action: utter_ask_more_details

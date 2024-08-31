@@ -13,9 +13,14 @@ nlu:
     - hey there
     - let's go
     - hey dude
-    - goodmorning
-    - goodevening
     - good afternoon
+    - Hi!
+    - Hello!
+    - Hey!
+    - Hi there!
+    - Hello, how are you doing?
+    - How's it going?
+    - How are you?
 
 - intent: goodbye
   examples: |
@@ -89,3 +94,86 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: ask_holiday_plans
+  examples: |
+    - Any big plans for the holidays?
+    - What are your holiday plans?
+    - Do you have any plans for Christmas?
+    - What are you doing for Thanksgiving?
+    - Going anywhere for the holidays?
+
+- intent: discuss_weather
+  examples: |
+    - How's the weather today?
+    - Is it raining?
+    - Is it cold outside?
+    - How's the weather this weekend?
+    - What's the weather like?
+
+- intent: discuss_hobbies
+  examples: |
+    - What do you do for fun?
+    - Do you have any hobbies?
+    - What do you enjoy doing?
+    - Any interesting hobbies?
+    - What do you like to do in your free time?
+    
+
+- intent: ask_day
+  examples: |
+    - How is your day?
+    - How is your day going so far?
+    - What's up???
+    - What’s up?
+
+- intent: discuss_travel
+  examples: |
+    - I'm in New York this week for Thanksgiving.
+    - I want to visit a rainforest.
+    - I'm going to try ziplining this weekend.
+    - If you could go anywhere on vacation, where would you go?
+    - Do you have any plans this weekend?
+
+- intent: discuss_weather
+  examples: |
+    - Is it raining pretty bad today?
+    - How's the weather?
+    - Do you like it in the Bay Area?
+    - It’s pretty dry here.
+    - They say there is a drought here.
+
+- intent: discuss_life_change
+  examples: |
+    - Has a lot changed in your life recently?
+    - Life is an exciting experience.
+    - What kinds of adventures?
+    - Any ones that I would be able to join you on?
+
+- intent: discuss_feelings
+  examples: |
+    - I'm a bit sad. I miss my cat.
+    - I'm dressed very well today so I feel good!
+    - I'm feeling a bit blue.
+    - I feel good today!
+
+- intent: discuss_hobbies
+  examples: |
+    - I want to try bull riding.
+    - I really want to try bull riding.
+    - I tried ziplining a couple years ago.
+    - I'm going to get a massage first.
+    - Have you ever tried ziplining?
+    - Do you like massages?
+
+- intent: ask_for_advice
+  examples: |
+    - Do you have good advice for positivity?
+    - What should I do to stay positive?
+
+- intent: ask_more_details
+  examples: |
+    - Where did you do it?
+    - When was the last time you saw this friend?
+    - What type of massage?
+    - Oh wow! Where are you going ziplining?
