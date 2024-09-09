@@ -1,75 +1,44 @@
 version: "3.1"
 
 stories:
-
-- story: happy path
+- story: greet and ask about department
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: ask_about_department
+  - action: utter_department_info
 
-- story: sad path 1
+- story: ask about courses
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: ask_about_courses
+  - action: utter_courses_info
 
-- story: sad path 2
+- story: ask about faculty
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: ask_about_faculty
+  - action: utter_faculty_info
 
-- story: greet and ask holiday plans
+- story: ask about events
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: ask_holiday_plans
-  - action: utter_holiday_plans
+  - intent: ask_about_events
+  - action: utter_events_info
 
-- story: discuss weather and respond
+- story: ask about facilities
   steps:
-  - intent: discuss_weather
-  - action: utter_discuss_weather
+  - intent: ask_about_facilities
+  - action: utter_facilities_info
 
-- story: discuss hobbies and respond
+- story: ask about research
   steps:
-  - intent: discuss_hobbies
-  - action: utter_discuss_hobbies
+  - intent: ask_about_research
+  - action: utter_research_info
 
-
-- story: discuss travel plans
+- story: ask about admission
   steps:
-  - intent: discuss_travel
-  - action: utter_discuss_travel
-  - intent: ask_more_details
-  - action: utter_ask_more_details
+  - intent: ask_about_admission
+  - action: utter_admission_info
 
-
-- story: discuss life changes
+- story: fetch data from website
   steps:
-  - intent: discuss_life_change
-  - action: utter_discuss_life_change
-
-- story: discuss feelings and ask advice
-  steps:
-  - intent: discuss_feelings
-  - action: utter_discuss_feelings
-  - intent: ask_for_advice
-  - action: utter_ask_for_advice
-
-- story: discuss hobbies
-  steps:
-  - intent: discuss_hobbies
-  - action: utter_discuss_hobbies
-  - intent: ask_more_details
-  - action: utter_ask_more_details
+  - intent: ask_about_website_data
+  - action: action_fetch_website_data

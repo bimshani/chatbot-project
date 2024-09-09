@@ -3,177 +3,76 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - good afternoon
-    - Hi!
+    - Hi! 
     - Hello!
     - Hey!
     - Hi there!
-    - Hello, how are you doing?
-    - How's it going?
-    - How are you?
+    - Good morning
+    - Good afternoon
 
-- intent: goodbye
+- intent: ask_about_department
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - Can you tell me about the CE department?
+    - What does the Computer Engineering department do?
+    - What is the focus of the CE department at KDU?
+    - Tell me about the Computer Engineering faculty.
+    - What programs does the CE department offer?
+    - What is the mission of the CE department?
+    - What is the vision of the CE department?
+    - Can you tell me about the Computer Engineering department at KDU?
+    - What is the Computer Engineering department all about?
+    - What does the CE department offer?
+    - Is Computer Engineering a good field to study?
+    - What are the benefits of studying Computer Engineering?
+    - Why should I choose the CE department at KDU?
 
-- intent: affirm
+- intent: ask_about_courses
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - What courses are available for first-year CE students?
+    - Can you list the courses in the CE department?
+    - What subjects are taught in Computer Engineering?
+    - What electives are available for CE students?
+    - What is taught in the Computer Systems Architecture course?
+    - What are the major areas of study in the CE program?
 
-- intent: deny
+- intent: ask_about_faculty
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - Who are the faculty members in the CE department?
+    - Can you tell me about the professors in CE?
+    - Who is the head of the Computer Engineering department?
 
-- intent: mood_great
+- intent: ask_about_events
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - What events are happening in the CE department?
+    - Are there any upcoming workshops in CE?
+    - What seminars are held by the CE department?
+    - Can I attend events in the CE department?
 
-- intent: mood_unhappy
+- intent: ask_about_facilities
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - What facilities does the CE department have?
+    - Can you tell me about the labs in the CE department?
+    - What equipment is available in the CE department's labs?
+    - What is the Electronic and Simulation Laboratory?
 
-- intent: bot_challenge
+- intent: ask_about_research
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - What research areas are covered by the CE department?
+    - Can you tell me about the ongoing research in the CE department?
+    - What research groups are there in the CE department?
+    - What projects are the CE department working on?
 
-- intent: ask_holiday_plans
+- intent: ask_about_admission
   examples: |
-    - Any big plans for the holidays?
-    - What are your holiday plans?
-    - Do you have any plans for Christmas?
-    - What are you doing for Thanksgiving?
-    - Going anywhere for the holidays?
+    - How can I apply to the CE department at KDU?
+    - What are the admission requirements for the CE program?
+    - How do I get into Computer Engineering at KDU?
+    - What qualifications do I need for the CE department?
 
-- intent: discuss_weather
-  examples: |
-    - How's the weather today?
-    - Is it raining?
-    - Is it cold outside?
-    - How's the weather this weekend?
-    - What's the weather like?
 
-- intent: discuss_hobbies
+- intent: ask_about_website_data
   examples: |
-    - What do you do for fun?
-    - Do you have any hobbies?
-    - What do you enjoy doing?
-    - Any interesting hobbies?
-    - What do you like to do in your free time?
-    
-
-- intent: ask_day
-  examples: |
-    - How is your day?
-    - How is your day going so far?
-    - What's up???
-    - What’s up?
-
-- intent: discuss_travel
-  examples: |
-    - I'm in New York this week for Thanksgiving.
-    - I want to visit a rainforest.
-    - I'm going to try ziplining this weekend.
-    - If you could go anywhere on vacation, where would you go?
-    - Do you have any plans this weekend?
-
-- intent: discuss_weather
-  examples: |
-    - Is it raining pretty bad today?
-    - How's the weather?
-    - Do you like it in the Bay Area?
-    - It’s pretty dry here.
-    - They say there is a drought here.
-
-- intent: discuss_life_change
-  examples: |
-    - Has a lot changed in your life recently?
-    - Life is an exciting experience.
-    - What kinds of adventures?
-    - Any ones that I would be able to join you on?
-
-- intent: discuss_feelings
-  examples: |
-    - I'm a bit sad. I miss my cat.
-    - I'm dressed very well today so I feel good!
-    - I'm feeling a bit blue.
-    - I feel good today!
-
-- intent: discuss_hobbies
-  examples: |
-    - I want to try bull riding.
-    - I really want to try bull riding.
-    - I tried ziplining a couple years ago.
-    - I'm going to get a massage first.
-    - Have you ever tried ziplining?
-    - Do you like massages?
-
-- intent: ask_for_advice
-  examples: |
-    - Do you have good advice for positivity?
-    - What should I do to stay positive?
-
-- intent: ask_more_details
-  examples: |
-    - Where did you do it?
-    - When was the last time you saw this friend?
-    - What type of massage?
-    - Oh wow! Where are you going ziplining?
+    - Can you fetch information from the website?
+    - Get me the latest info from the website
+    - Can you search the website for details?
+    - I need some information from the website
