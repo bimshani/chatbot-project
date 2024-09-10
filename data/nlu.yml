@@ -3,89 +3,76 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - Hi! 
+    - Hello!
+    - Hey!
+    - Hi there!
+    - Good morning
+    - Good afternoon
 
-- intent: goodbye
+- intent: ask_about_department
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - Can you tell me about the CE department?
+    - What does the Computer Engineering department do?
+    - What is the focus of the CE department at KDU?
+    - Tell me about the Computer Engineering faculty.
+    - What programs does the CE department offer?
+    - What is the mission of the CE department?
+    - What is the vision of the CE department?
+    - Can you tell me about the Computer Engineering department at KDU?
+    - What is the Computer Engineering department all about?
+    - What does the CE department offer?
+    - Is Computer Engineering a good field to study?
+    - What are the benefits of studying Computer Engineering?
+    - Why should I choose the CE department at KDU?
 
-- intent: affirm
+- intent: ask_about_courses
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - What courses are available for first-year CE students?
+    - Can you list the courses in the CE department?
+    - What subjects are taught in Computer Engineering?
+    - What electives are available for CE students?
+    - What is taught in the Computer Systems Architecture course?
+    - What are the major areas of study in the CE program?
 
-- intent: deny
+- intent: ask_about_faculty
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - Who are the faculty members in the CE department?
+    - Can you tell me about the professors in CE?
+    - Who is the head of the Computer Engineering department?
 
-- intent: mood_great
+- intent: ask_about_events
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - What events are happening in the CE department?
+    - Are there any upcoming workshops in CE?
+    - What seminars are held by the CE department?
+    - Can I attend events in the CE department?
 
-- intent: mood_unhappy
+- intent: ask_about_facilities
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - What facilities does the CE department have?
+    - Can you tell me about the labs in the CE department?
+    - What equipment is available in the CE department's labs?
+    - What is the Electronic and Simulation Laboratory?
 
-- intent: bot_challenge
+- intent: ask_about_research
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - What research areas are covered by the CE department?
+    - Can you tell me about the ongoing research in the CE department?
+    - What research groups are there in the CE department?
+    - What projects are the CE department working on?
+
+- intent: ask_about_admission
+  examples: |
+    - How can I apply to the CE department at KDU?
+    - What are the admission requirements for the CE program?
+    - How do I get into Computer Engineering at KDU?
+    - What qualifications do I need for the CE department?
+
+
+- intent: ask_about_website_data
+  examples: |
+    - Can you fetch information from the website?
+    - Get me the latest info from the website
+    - Can you search the website for details?
+    - I need some information from the website

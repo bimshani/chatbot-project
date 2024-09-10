@@ -2,32 +2,49 @@ version: "3.1"
 
 intents:
   - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - ask_about_department
+  - ask_about_courses
+  - ask_about_faculty
+  - ask_about_events
+  - ask_about_facilities
+  - ask_about_research
+  - ask_about_admission
+  - ask_website_data
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "Hello! How can I assist you with information about the Computer Engineering department today?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_department_info:
+    - text: |
+        The Department of Computer Engineering at KDU is newly established and offers a BSc (Hons) in Computer Engineering. The program provides students with knowledge in electronics, software technologies, network technologies, web technologies, leadership, and industrial knowledge.
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_courses_info:
+    - text: |
+        The CE department offers various course modules such as Computer Systems Architecture, Digital Electronics, Operating Systems, Embedded Systems, and Artificial Intelligence. Students also have elective options in areas like Data Mining, Big Data Analytics, and Robotics.
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_faculty_info:
+    - text: |
+        The CE department is headed by Dr. B Hettige, Senior Lecturer Grade II. The department also includes lecturers like Mrs. Sandali Thamalka Goonatilleke and adjunct staff such as Prof. Attaphongse Taparugssanagorn.
 
-  utter_goodbye:
-  - text: "Bye"
+  utter_events_info:
+    - text: |
+        The CE department regularly hosts events such as seminars, workshops, and collaborative research projects. Stay tuned for updates on upcoming events.
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_facilities_info:
+    - text: |
+        The CE department is equipped with modern facilities including the Electronic and Simulation Laboratory, Computer Engineering Workshop, and the High-Performance Computing Cluster. These labs are equipped with state-of-the-art equipment to support student projects and research.
+
+  utter_research_info:
+    - text: |
+        Ongoing research in the CE department covers areas such as Artificial Intelligence, Machine Learning, Big Data Analytics, and Internet of Things (IoT). The department is involved in several collaborative projects and encourages student participation in research.
+
+  utter_admission_info:
+    - text: |
+        To apply for the BSc (Hons) Computer Engineering program, you need to have completed your A-Levels in Mathematics or Science. The admission process includes an entrance exam and an interview.
+
+actions:
+  - action_fetch_website_data
 
 session_config:
   session_expiration_time: 60

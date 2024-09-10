@@ -1,30 +1,44 @@
 version: "3.1"
 
 stories:
-
-- story: happy path
+- story: greet and ask about department
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: ask_about_department
+  - action: utter_department_info
 
-- story: sad path 1
+- story: ask about courses
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: ask_about_courses
+  - action: utter_courses_info
 
-- story: sad path 2
+- story: ask about faculty
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: ask_about_faculty
+  - action: utter_faculty_info
+
+- story: ask about events
+  steps:
+  - intent: ask_about_events
+  - action: utter_events_info
+
+- story: ask about facilities
+  steps:
+  - intent: ask_about_facilities
+  - action: utter_facilities_info
+
+- story: ask about research
+  steps:
+  - intent: ask_about_research
+  - action: utter_research_info
+
+- story: ask about admission
+  steps:
+  - intent: ask_about_admission
+  - action: utter_admission_info
+
+- story: Fetch website data
+  steps:
+  - intent: ask_website_data
+  - action: action_fetch_website_data
