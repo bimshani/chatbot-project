@@ -9,6 +9,7 @@ intents:
   - ask_about_facilities
   - ask_about_research
   - ask_about_admission
+  - ask_website_data
 
 responses:
   utter_greet:

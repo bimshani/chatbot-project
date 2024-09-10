@@ -38,7 +38,7 @@ stories:
   - intent: ask_about_admission
   - action: utter_admission_info
 
-- story: fetch data from website
+- story: Fetch website data
   steps:
-  - intent: ask_about_website_data
+  - intent: ask_website_data
   - action: action_fetch_website_data
